@@ -1,0 +1,10 @@
+# Python virtual enviroment
+.venv
+
+#Python enviroment Variables, secrets
+.env
+
+#pycache
+__pycache__
+
+
