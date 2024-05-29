@@ -9,6 +9,11 @@ app = Flask(__name__)
 def index():
     return render_template('index.html')
 
+@app.route('/sigma')
+def sigma():
+    return render_template('sigma.html')
+
+
 #Handaling a route for requests 
 # @app.route('/page')
 # def get_data():
