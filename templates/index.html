@@ -4,13 +4,183 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gemini Competition</title>
-    <link href="{{ url_for('static', filename='styles/style.css')}}" rel="stylesheet"/> 
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/style.css')}}"/> -->
+    
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/style.css')}}" /> 
+    <script defer src="{{ url_for('static', filename='scripts/chat.jS')}}"></script>
 </head>
 <body>
-    <h1>Gemini Competiton Project Title</h1>
 
+    <hgroup id="hgroup">
 
+        <nav>
+            <ul>
+                <li><a href="">About</a></li>
+                <li><a href="">Github</a></li>
+                <li><a href="">Competition</a></li>
+            </ul>
+        </nav>
 
+        <header>
+            <h1>Welcome to Genesis</h1>
+            <p> <b>Genesis</b> is a Causal Analysis chatbot, powered by Gemini, that helps determine the 'causal impact' stemming from an event.</p>
+            <!-- <p>Causality is a GenAI tool for understanding the "causal impacts" that may arise as a result of an event or action.</p> -->
+        </header>
+    
+        <!-- <menu>
+        </menu> -->
+    
+    </hgroup>
 
+    <main id="main">
+
+        <div id="interactivity">
+
+            
+            <!-- <div id='chatborder'>
+                <p id="chatlog18" class="chatlog">&nbsp;</p>
+                <p id="chatlog17" class="chatlog">&nbsp;</p>
+                <p id="chatlog16" class="chatlog">&nbsp;</p>
+                <p id="chatlog15" class="chatlog">&nbsp;</p>
+                <p id="chatlog14" class="chatlog">&nbsp;</p>
+                <p id="chatlog13" class="chatlog">&nbsp;</p>
+                <p id="chatlog12" class="chatlog">&nbsp;</p>
+                <p id="chatlog11" class="chatlog">&nbsp;</p>
+                <p id="chatlog10" class="chatlog">&nbsp;</p>
+                <p id="chatlog9" class="chatlog">&nbsp;</p>
+                <p id="chatlog8" class="chatlog">&nbsp;</p>
+                <p id="chatlog7" class="chatlog">&nbsp;</p>
+                <p id="chatlog6" class="chatlog">&nbsp;</p>
+                <p id="chatlog5" class="chatlog">&nbsp;</p>
+                <p id="chatlog4" class="chatlog">&nbsp;</p>
+                <p id="chatlog3" class="chatlog">&nbsp;</p>
+                <p id="chatlog2" class="chatlog">&nbsp;</p>
+                <p id="chatlog1" class="chatlog">&nbsp;</p>
+                <form id="user-query">
+                    <input type="text" name="chat" id="chatbox" placeholder="Hi there! Type here to talk to me." onfocus="placeHolder()">
+                </form>
+            </div> -->
+
+            <div class="container-fluid h-100">
+                <div class="row justify-content-around h-100">
+                    <div class="col-xl-2 col-lg-2 order-lg-1 order-2 align-self-center left">
+                        <div id="slide1" class="sideExpert"><h3>Local</h3></div>
+                        <div id="slide2" class="sideExpert"><h3>Municipality</h3></div>
+                        <div id="slide3" class="sideExpert"><h3>National</h3></div>
+                    </div>		
+                    <div class="col-xl-8 col-lg-7 order-lg-2 order-1 align-self-end chat">
+                        <!-- col-xl-8 -->
+                        <div class="card">
+                            <div class="card-header msg_head">
+                                <div class="d-flex bd-highlight">
+                                    <div class="img_cont">
+                                        <img src="https://i.ibb.co/fSNP7Rz/icons8-chatgpt-512.png" class="rounded-circle user_img">
+                                        <span class="online_icon"></span>
+                                    </div>
+                                    <div class="user_info">
+                                        <span>CausalBot</span>
+                                        <p>Please tell me the causal event you would like me to analyze. I'm ready to put my deduction skills to work!  🧠 I will give you 3 possible causes and 3 possible effects.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="messageFormeight" class="card-body msg_card_body">
+                                
+                                
+                            </div>
+                            <div class="card-footer">
+                                <form id="messageArea" class="input-group">
+                                    <input type="text" id="text" name="msg" placeholder="Type your message..." autocomplete="off" class="form-control type_msg" required/>
+                                    <div class="input-group-append">
+                                        <button type="submit" id="send" class="input-group-text send_btn"><i class="fas fa-location-arrow"></i></button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-2 order-lg-3 order-3 align-self-center right">
+                        <div id="slide4" class="sideExpert"><h3>Global</h3></div>
+                        <div id="slide5" class="sideExpert"><h3>Economic</h3></div>
+                        <div id="slide6" class="sideExpert"><h3>Enviromental</h3></div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- <div>
+                <h2>Interactive Buttons</h2>
+                <button>Scramble</button>
+                <button>ReRun</button>
+                <button>Fix</button>
+            </div> -->
+            <!-- <div id="messages">
+                <div><p>Message 1</p></div>
+                <div><p>Message 2</p></div>
+
+            </div>
+            <div id="submission">
+                <textarea id="user-query" name="user-query" rows="3" cols="50" wrap="hard"></textarea>
+                <input type="button" value="Submit">  -->
+                    <!-- Might be confusing, add hover over the implicate button so it shows submit -->
+                <!-- <label for="file">Downloading progress:</label> -->
+                <!-- <progress id="file" value="50" max="100"> 50%</progress> -->
+            <!-- </div> -->
+            
+        </div>
+        
+        
+        
+
+       
+
+        
+        
+        
+        <!-- <div id="result">
+            <h2>Results from your query:</h2>
+            <div id="populate-response">
+
+                <template>
+                    <article id="exmaple-response">
+                        <h3>"Blank" Relationship</h3>
+                        <p>The resulting action will have this kind of effect on the</p>
+                    </article>
+                </template>
+                 
+            </div>
+        </div> -->
+
+    </main>
+<!-- 
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top" id="footer">
+        <p class="col-md-4 mb-0 text-body-secondary">© 2024 Gemini API Developer Competition Submission</p>
+    
+        <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+          <svg class="bi me-2" width="40" height="20"><use xlink:href="#bootstrap"></use></svg>
+        </a>
+    
+        <ul class="nav col-md-4 justify-content-end">
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Papers</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Github</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Video</a></li>
+        </ul>
+    </footer> -->
+
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4" id="footer">
+        <p class="col-md-4 mb-0 text-body-secondary">© 2024 Gemini API Developer Competition Submission</p>
+            
+        <ul class="nav col-md-4 justify-content-end">
+            <li class="nav-item"><a href="" class="nav-link px-2 text-body-secondary">Papers</a></li>
+            <li class="nav-item"><a href="" class="nav-link px-2 text-body-secondary">Video</a></li>
+            <li class="nav-item"><a href="" class="nav-link px-2 text-body-secondary">Github</a></li>
+        </ul>
+    </footer>
+    
 </body>
 </html>

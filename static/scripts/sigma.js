@@ -2,6 +2,8 @@
  * This is a minimal example of sigma. You can use it as a base to write new
  * examples, or reproducible test cases for new issues, for instance.
  */
+// import Graph from "graphology";
+// import Sigma from "sigma";
 
 const graph = new Graph();
 graph.addNode("1", { label: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", x: 0, y: 0, size: 10, color: "blue" });

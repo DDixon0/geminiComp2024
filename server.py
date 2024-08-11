@@ -1,17 +1,34 @@
 from flask import Flask, render_template, request
-from gemini import user_query_gemini
+from gemini import user_chat_response
 from waitress import serve
+import requests
+import os
+import re
+
 
 app = Flask(__name__)
 
 @app.route('/')
-@app.route('/index')
+@app.route('/index',methods = ['GET', 'POST'])
 def index():
     return render_template('index.html')
 
-@app.route('/sigma')
-def sigma():
-    return render_template('sigma.html')
+@app.route("/get", methods=["GET", "POST"])
+def chat():
+    msg = request.form["msg"]
+    input = msg
+    return get_Chat_response(input)
+
+def get_Chat_response(text):
+    out =  user_chat_response(text)
+    out = re.sub(r'\n',r'<br />',out)
+    # out = rep.replace('\n', '<br />')
+    out = re.sub(r'\*\*(.+?)\*\*', r'<b>\1</b>', out)
+    # print(out)
+    return out
+# @app.route('/sigma')
+# def sigma():
+#     return render_template('sigma.html')
 
 
 #Handaling a route for requests 
