@@ -4,32 +4,11 @@
     box-sizing: border-box;
 }
 
-html{
-    /* height: 100vh; */
-    /* overflow-y: hidden; */
-    /* justify-content: center; */
-}
-
 
 body{
-    /* margin-left: 10%;
-    margin-right: 10%;
-    margi; */
-    /* box-sizing: border-box;
-    display: grid;
-    grid-template:
-    'header' 16%
-    'main' 80%
-    'footer' 4%;
-    gap: 5px; */
-    /* background-color: #2196F3; */
-    /* padding: 10px; */
+
     min-height: 100%;
 
-    /* margin: 0; */
-	/* background: rgb(44, 47, 59);
-    background: -webkit-linear-gradient(to right, rgb(40, 59, 34), rgb(54, 60, 70), rgb(32, 32, 43));
-	background: linear-gradient(to right, rgb(38, 51, 61), rgb(50, 55, 65), rgb(33, 33, 78)); */
 
     background: rgb(74,125,91);
     background: -moz-radial-gradient(circle, rgba(74,125,91,1) 0%, rgba(7,39,60,1) 100%);
@@ -47,8 +26,7 @@ body{
   
   /* Track */
   ::-webkit-scrollbar-track {
-    /* background: #f1f1f1;  */
-    /* background:; */
+
   }
    
   /* Handle */
@@ -63,9 +41,7 @@ body{
 
 
 
-
 /* Header Stuff */
-
 #hgroup{
     /* background-color: rgb(255, 255, 255); */
     /* padding: 20px; */
@@ -129,28 +105,11 @@ nav li a:hover{
 
 /* Main Stuff */
 
-/* main{
-    margin: 0;
-    padding: 0;
-} */
 
 #main{
-    /* display: inline-flex; */
-    /* justify-content:center;
-    align-items: center;
-    align-content: center; */
-    /* background-color: bisque; */
-    /* max-width: 50%; */
-    grid-area: main;
-    /* display: grid;
-    grid-template-areas:
-    'side1 chat chat side2'
-    'side3 chat chat side4'
-    'side5 chat chat side6'; */
     padding-top: 10px;
     padding-bottom: 10px;
 }
-
 
 
 
@@ -373,15 +332,6 @@ nav li a:hover{
     .sideExpert{
         color: white;
         text-align: center;
-        /* justify-content: center; */
-        /* display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        background-color: gray;
-        border-radius: 25px;
-        margin: 20px; */
-        /* height: 71vh; */
         border-radius: 15px !important;
         background-color: rgba(0,0,0,0.4) !important;
         /* padding: 1rem; */
@@ -408,16 +358,6 @@ nav li a:hover{
     .side-text{
         font-size: small;
     }
-
-    /* .card-header{
-        background-color: rgba(0,0,0,0.3);
-        font-size: larger;
-    }
-
-    .card-title{
-        font-size: medium;
-    } */
-
 
 
 
@@ -470,11 +410,7 @@ nav li a:hover{
         }
     }
 
-    /* @media screen and (max-width: 800px) {
-        .sideExpert{
-            flex-grow: 0;
-        }
-    } */
+
 
 
 

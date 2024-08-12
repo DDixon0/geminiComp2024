@@ -8,13 +8,13 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <!-- <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/style.css')}}"/> -->
-    
+        
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/style.css')}}" /> 
+    <link rel="shortcut icon" href="{{ url_for('static', filename='assets/GG.png')}}" type="image/x-icon">
     <script defer src="{{ url_for('static', filename='scripts/chat.jS')}}"></script>
 </head>
 <body>
@@ -34,10 +34,7 @@
             <p> <b>Genesis</b> is a Causal Analysis chatbot, powered by Gemini, that helps determine the 'causal impact' stemming from an event.</p>
             <!-- <p>Causality is a GenAI tool for understanding the "causal impacts" that may arise as a result of an event or action.</p> -->
         </header>
-    
-        <!-- <menu>
-        </menu> -->
-    
+
     </hgroup>
 
     <main id="main">
@@ -50,7 +47,7 @@
                         <div class="side-body">
                           <h3 class="side-title">Local Impact</h3>
                           <!-- <p class="side-text">Going in depth with the local causal impact.</p> -->
-                          <a href="#" class="btn btn-primary">Localize</a>
+                          <button type="button" class="btn btn-primary" aria-label="Button to generate Local Impact">Localize</button>
                         </div>
                     </div>
 
@@ -59,7 +56,7 @@
                         <div class="side-body">
                           <h3 class="side-title">Municipal Impact</h3>
                           <!-- <p class="side-text">Going in depth with the Municipal causal impact.</p> -->
-                          <a href="#" class="btn btn-primary">Municipalize</a>
+                          <button type="button" class="btn btn-primary" aria-label="Button to generate Municipal Impact">Municipalize</button>
                         </div>
                     </div>
 
@@ -68,7 +65,7 @@
                         <div class="side-body">
                           <h3 class="side-title">National Impact</h3>
                           <!-- <p class="side-text">Going in depth with the National causal impact.</p> -->
-                          <a href="#" class="btn btn-primary">Nationalize</a>
+                          <button type="button" class="btn btn-primary" aria-label="Button to generate National Impact">Nationalize</button>
                         </div>
                     </div>                    
 
@@ -79,11 +76,11 @@
                         <div class="card-header msg_head">
                             <div class="d-flex bd-highlight">
                                 <div class="img_cont">
-                                    <img src="https://i.ibb.co/fSNP7Rz/icons8-chatgpt-512.png" class="rounded-circle user_img">
+                                    <img src="{{ url_for('static', filename='assets/GG.png')}}" class="rounded-circle user_img">
                                     <span class="online_icon"></span>
                                 </div>
                                 <div class="user_info">
-                                    <span>CausalBot</span>
+                                    <span>GenesisBot</span>
                                     <p>Please tell me the causal event you would like me to analyze. I'm ready to put my deduction skills to work!  🧠 I will give you 3 possible causes and 3 possible effects.</p>
                                 </div>
                             </div>
@@ -108,7 +105,7 @@
                         <div class="side-body">
                           <h3 class="side-title">Global Impact</h3>
                           <!-- <p class="side-text">Going in depth with the National causal impact.</p> -->
-                          <a href="#" class="btn btn-primary">Globalize</a>
+                          <button type="button" class="btn btn-primary" aria-label="Button to generate Global Impact">Globalize</button>
                         </div>
                     </div>  
                     <div id="side5" class="sideExpert">
@@ -116,15 +113,15 @@
                         <div class="side-body">
                           <h3 class="side-title">Economic Impact</h3>
                           <!-- <p class="side-text">Going in depth with the National causal impact.</p> -->
-                          <a href="#" class="btn btn-primary">Economize</a>
+                          <button type="button" class="btn btn-primary" aria-label="Button to generate Economiucal Impact">Economize</button>
                         </div>
                     </div>  
                     <div id="side6" class="sideExpert">
-                        <h2 class="side-header">Enviromental Expert</h2>
+                        <h2 class="side-header">Ecological Expert</h2>
                         <div class="side-body">
-                          <h3 class="side-title">Enviromental Impact</h3>
+                          <h3 class="side-title">Ecological Impact</h3>
                           <!-- <p class="side-text">Going in depth with the National causal impact.</p> -->
-                          <a href="#" class="btn btn-primary">Environmentalize</a>
+                          <button type="button" class="btn btn-primary" aria-label="Button to generate Ecological Impact">Ecologize</button>
                         </div>
                     </div>  
                 </div>
@@ -134,20 +131,6 @@
      
 
     </main>
-<!-- 
-    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top" id="footer">
-        <p class="col-md-4 mb-0 text-body-secondary">© 2024 Gemini API Developer Competition Submission</p>
-    
-        <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-          <svg class="bi me-2" width="40" height="20"><use xlink:href="#bootstrap"></use></svg>
-        </a>
-    
-        <ul class="nav col-md-4 justify-content-end">
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Papers</a></li>
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Github</a></li>
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Video</a></li>
-        </ul>
-    </footer> -->
 
     <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4" id="footer">
         <p class="col-md-4 mb-0 text-body-secondary">© 2024 Gemini API Developer Competition Submission</p>
