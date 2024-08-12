@@ -42,119 +42,96 @@
 
     <main id="main">
 
-        <div id="interactivity">
-
-            
-            <!-- <div id='chatborder'>
-                <p id="chatlog18" class="chatlog">&nbsp;</p>
-                <p id="chatlog17" class="chatlog">&nbsp;</p>
-                <p id="chatlog16" class="chatlog">&nbsp;</p>
-                <p id="chatlog15" class="chatlog">&nbsp;</p>
-                <p id="chatlog14" class="chatlog">&nbsp;</p>
-                <p id="chatlog13" class="chatlog">&nbsp;</p>
-                <p id="chatlog12" class="chatlog">&nbsp;</p>
-                <p id="chatlog11" class="chatlog">&nbsp;</p>
-                <p id="chatlog10" class="chatlog">&nbsp;</p>
-                <p id="chatlog9" class="chatlog">&nbsp;</p>
-                <p id="chatlog8" class="chatlog">&nbsp;</p>
-                <p id="chatlog7" class="chatlog">&nbsp;</p>
-                <p id="chatlog6" class="chatlog">&nbsp;</p>
-                <p id="chatlog5" class="chatlog">&nbsp;</p>
-                <p id="chatlog4" class="chatlog">&nbsp;</p>
-                <p id="chatlog3" class="chatlog">&nbsp;</p>
-                <p id="chatlog2" class="chatlog">&nbsp;</p>
-                <p id="chatlog1" class="chatlog">&nbsp;</p>
-                <form id="user-query">
-                    <input type="text" name="chat" id="chatbox" placeholder="Hi there! Type here to talk to me." onfocus="placeHolder()">
-                </form>
-            </div> -->
-
-            <div class="container-fluid h-100">
-                <div class="row justify-content-around h-100">
-                    <div class="col-xl-2 col-lg-2 order-lg-1 order-2 align-self-center left">
-                        <div id="slide1" class="sideExpert"><h3>Local</h3></div>
-                        <div id="slide2" class="sideExpert"><h3>Municipality</h3></div>
-                        <div id="slide3" class="sideExpert"><h3>National</h3></div>
-                    </div>		
-                    <div class="col-xl-8 col-lg-7 order-lg-2 order-1 align-self-end chat">
-                        <!-- col-xl-8 -->
-                        <div class="card">
-                            <div class="card-header msg_head">
-                                <div class="d-flex bd-highlight">
-                                    <div class="img_cont">
-                                        <img src="https://i.ibb.co/fSNP7Rz/icons8-chatgpt-512.png" class="rounded-circle user_img">
-                                        <span class="online_icon"></span>
-                                    </div>
-                                    <div class="user_info">
-                                        <span>CausalBot</span>
-                                        <p>Please tell me the causal event you would like me to analyze. I'm ready to put my deduction skills to work!  🧠 I will give you 3 possible causes and 3 possible effects.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="messageFormeight" class="card-body msg_card_body">
-                                
-                                
-                            </div>
-                            <div class="card-footer">
-                                <form id="messageArea" class="input-group">
-                                    <input type="text" id="text" name="msg" placeholder="Type your message..." autocomplete="off" class="form-control type_msg" required/>
-                                    <div class="input-group-append">
-                                        <button type="submit" id="send" class="input-group-text send_btn"><i class="fas fa-location-arrow"></i></button>
-                                    </div>
-                                </form>
-                            </div>
+        <div class="container-fluid h-100">
+            <div class="row justify-content-around h-100">
+                <div class="col-xl-2 col-lg-2 order-lg-1 order-2 align-self-center left">
+                    <div id="side1" class="sideExpert">
+                        <h2 class="side-header">Local Expert</h2>
+                        <div class="side-body">
+                          <h3 class="side-title">Local Impact</h3>
+                          <!-- <p class="side-text">Going in depth with the local causal impact.</p> -->
+                          <a href="#" class="btn btn-primary">Localize</a>
                         </div>
                     </div>
-                    <div class="col-xl-2 col-lg-2 order-lg-3 order-3 align-self-center right">
-                        <div id="slide4" class="sideExpert"><h3>Global</h3></div>
-                        <div id="slide5" class="sideExpert"><h3>Economic</h3></div>
-                        <div id="slide6" class="sideExpert"><h3>Enviromental</h3></div>
+
+                    <div id="side2" class="sideExpert">
+                        <h2 class="side-header">Municipal Expert</h2>
+                        <div class="side-body">
+                          <h3 class="side-title">Municipal Impact</h3>
+                          <!-- <p class="side-text">Going in depth with the Municipal causal impact.</p> -->
+                          <a href="#" class="btn btn-primary">Municipalize</a>
+                        </div>
+                    </div>
+
+                    <div id="side3" class="sideExpert">
+                        <h2 class="side-header">National Expert</h2>
+                        <div class="side-body">
+                          <h3 class="side-title">National Impact</h3>
+                          <!-- <p class="side-text">Going in depth with the National causal impact.</p> -->
+                          <a href="#" class="btn btn-primary">Nationalize</a>
+                        </div>
+                    </div>                    
+
+                </div>		
+                <div class="col-xl-8 col-lg-7 order-lg-2 order-1 align-self-end chat">
+                    <!-- col-xl-8 -->
+                    <div class="card">
+                        <div class="card-header msg_head">
+                            <div class="d-flex bd-highlight">
+                                <div class="img_cont">
+                                    <img src="https://i.ibb.co/fSNP7Rz/icons8-chatgpt-512.png" class="rounded-circle user_img">
+                                    <span class="online_icon"></span>
+                                </div>
+                                <div class="user_info">
+                                    <span>CausalBot</span>
+                                    <p>Please tell me the causal event you would like me to analyze. I'm ready to put my deduction skills to work!  🧠 I will give you 3 possible causes and 3 possible effects.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="messageFormeight" class="card-body msg_card_body">
+                            
+                            
+                        </div>
+                        <div class="card-footer">
+                            <form id="messageArea" class="input-group">
+                                <input type="text" id="text" name="msg" placeholder="Type your message..." autocomplete="off" class="form-control type_msg" required/>
+                                <div class="input-group-append">
+                                    <button type="submit" id="send" class="input-group-text send_btn"><i class="fas fa-location-arrow"></i></button>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
+                <div class="col-xl-2 col-lg-2 order-lg-3 order-3 align-self-center right">
+                    <div id="side4" class="sideExpert">
+                        <h2 class="side-header">Global Expert</h2>
+                        <div class="side-body">
+                          <h3 class="side-title">Global Impact</h3>
+                          <!-- <p class="side-text">Going in depth with the National causal impact.</p> -->
+                          <a href="#" class="btn btn-primary">Globalize</a>
+                        </div>
+                    </div>  
+                    <div id="side5" class="sideExpert">
+                        <h2 class="side-header">Economic Expert</h2>
+                        <div class="side-body">
+                          <h3 class="side-title">Economic Impact</h3>
+                          <!-- <p class="side-text">Going in depth with the National causal impact.</p> -->
+                          <a href="#" class="btn btn-primary">Economize</a>
+                        </div>
+                    </div>  
+                    <div id="side6" class="sideExpert">
+                        <h2 class="side-header">Enviromental Expert</h2>
+                        <div class="side-body">
+                          <h3 class="side-title">Enviromental Impact</h3>
+                          <!-- <p class="side-text">Going in depth with the National causal impact.</p> -->
+                          <a href="#" class="btn btn-primary">Environmentalize</a>
+                        </div>
+                    </div>  
+                </div>
             </div>
-            
-            <!-- <div>
-                <h2>Interactive Buttons</h2>
-                <button>Scramble</button>
-                <button>ReRun</button>
-                <button>Fix</button>
-            </div> -->
-            <!-- <div id="messages">
-                <div><p>Message 1</p></div>
-                <div><p>Message 2</p></div>
-
-            </div>
-            <div id="submission">
-                <textarea id="user-query" name="user-query" rows="3" cols="50" wrap="hard"></textarea>
-                <input type="button" value="Submit">  -->
-                    <!-- Might be confusing, add hover over the implicate button so it shows submit -->
-                <!-- <label for="file">Downloading progress:</label> -->
-                <!-- <progress id="file" value="50" max="100"> 50%</progress> -->
-            <!-- </div> -->
-            
         </div>
         
-        
-        
-
-       
-
-        
-        
-        
-        <!-- <div id="result">
-            <h2>Results from your query:</h2>
-            <div id="populate-response">
-
-                <template>
-                    <article id="exmaple-response">
-                        <h3>"Blank" Relationship</h3>
-                        <p>The resulting action will have this kind of effect on the</p>
-                    </article>
-                </template>
-                 
-            </div>
-        </div> -->
+     
 
     </main>
 <!-- 
