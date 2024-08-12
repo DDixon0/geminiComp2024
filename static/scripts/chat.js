@@ -116,3 +116,4 @@ for (let i = 0; i < allButtons.length; i++) {
   allButtons[i].addEventListener('click', btnFuncs[i])
 }
 
+alert("I kindly ask that you do not spam my API Token. Thank You!");

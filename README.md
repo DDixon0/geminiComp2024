@@ -7,6 +7,9 @@
 - 🧠 Determine the Causal Event
 - 🕵️‍♂️ Review Cause&Effects
 - 🦸🏻‍♂️ Talk with council of experts about causal event
+
+## [Link to live site here!!!](https://ddixon0.pythonanywhere.com/)
+
 ## About
 
 What is a causal event? A causal event is an occurrence that directly leads to another event or outcome. It's the "cause" in a cause-and-effect relationship. GPT models do not understand causation. GPT models are built on a correlation framework. However, correlation is not causation. This chatbot hopes to supercharge Gemini's abilities, in hopes of understanding how we can make that jump from correlation into causation.
