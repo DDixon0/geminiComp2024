@@ -22,9 +22,7 @@ def chat():
 def get_Chat_response(text):
     out =  user_chat_response(text)
     out = re.sub(r'\n',r'<br />',out)
-    # out = rep.replace('\n', '<br />')
     out = re.sub(r'\*\*(.+?)\*\*', r'<b>\1</b>', out)
-    # print(out)
     return out
 
 if __name__ == "__main__":

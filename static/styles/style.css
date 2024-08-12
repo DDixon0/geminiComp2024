@@ -242,7 +242,7 @@ nav li a:hover{
     }
     .user_info p{
         font-size: 10px;
-        color: rgba(255,255,255,0.6);
+        color: rgb(255, 255, 255);
     }
     .video_cam{
         margin-left: 50px;

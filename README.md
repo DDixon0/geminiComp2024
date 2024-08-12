@@ -32,6 +32,9 @@ My app for the 2024 Google Gemini API Developer Competition
 ## Resouurces
 - [Reddit Post](https://www.reddit.com/r/ArtificialInteligence/comments/126wjqv/i_coached_chatgpt_on_my_system_for_understanding/)
 - [Wikipedia](https://en.wikipedia.org/wiki/Causal_reasoning)
+- [Causality](https://en.wikipedia.org/wiki/Causality)
+- [ChatBot Video](https://www.youtube.com/watch?v=70H_7C0kMbI)
+- [Github Repo Flask + JS](https://github.com/patrickloeber/chatbot-deployment)
 - [life2vec](https://life2vec.dk/)
 
 The Life2vec project is an incredible POC of what a casaulGPT could look like.
